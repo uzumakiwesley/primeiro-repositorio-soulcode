@@ -15,4 +15,4 @@ console.log(++num) // 7 // operador de pré incremento
 //operadores de decremento
 console.log(num--) // 7 operador de pós decremento
 console.log(num) // 6
-console.log(--num)
+console.log(--num) // 5 // operador de pré decremento
