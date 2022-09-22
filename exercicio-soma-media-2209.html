@@ -17,14 +17,17 @@
         // outro numero
 
         
-        const  numero1 = parseInt(prompt('Informe um número inteiro'))
-        const  numero2 = parseInt(prompt('Informe mais um número inteiro'))
-        const  numero3 = parseInt(prompt('Informe outro número inteiro'))
+        let  valor1 = parseInt(prompt('Informe um número inteiro'));
+        let  valor2 = parseInt(prompt('Informe mais um número inteiro'));
+        let  valor3 = parseInt(prompt('Informe outro número inteiro'));
 
-console.log(numero1)
-console.log(numero2)
-console.log(numero3)
+        let soma = valor1 + valor2 + valor3  
+        let media = soma / 3
+        document.write(`<p>O resultado da soma é: ${soma}</p>`)
+        document.write(`<p>A média entre os números é: ${media.toFixed(2)}</p>`)
 
 
 
+
+   </script>
 
