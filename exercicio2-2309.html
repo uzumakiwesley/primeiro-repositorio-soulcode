@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+         * Faça um programa que leia um vetor de dez números reais
+         calcule e mostre a quantidade de numeros negativos e a soma dos números 
+         positivos desse vetor
+         */
+
+         var vetor = []
+
+         for (i = 0; i < 10; i++) {
+            vetor[i] = parseInt(prompt('Digite 10 números incluindo negativos'))
+ 
+         }
+
+         document.write(`<br/>Números escolhidos <br/><br/>${vetor}`)
+
+         var negativos = []
+         var positivos = []
+         var j = 0, k = 0
+
+
+         for(a = 0; a < 10; a++) {
+
+            if(vetor[a] < 0) {
+                negativos[j] = vetor[a]; j++;
+            } else{
+
+                positivos[k] = vetor[a]; k++;
+
+            }
+
+        }
+
+        let soma = 0
+
+        for(let vetor of positivos) {
+            soma = soma + vetor
+        }
+   
+
+         document.write(`<br/><br/>A quantidade de números negativos é:  ` + j)
+         document.write(`<br/>A soma dos positivos é: ` + soma)
+
+         
+        
+
+
+    </script>
+</body>
+</html>

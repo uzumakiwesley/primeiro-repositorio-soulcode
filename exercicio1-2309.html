@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     /**
+      * faça um programa  que leia um vetor de seis elementos numericos inteiros, calcule e mostre:
+      * a) a quantidade de números
+      * v) quais números são pares
+      * c) a quantidade de números impares
+      * d) quais números impares
+      */
+
+        var vetor = []
+
+        for(i = 0; i < 6; i++) {
+            vetor[i] = parseInt(prompt('Digite 6 números inteiros'))
+        }
+
+        document.write(`Números escolhidos <br/><br/>${vetor}`)
+
+        var impares = []
+        var pares = []
+        var j = 0, k = 0
+
+        for(a = 0; a < 6; a++) {
+
+            if(vetor[a]%2==0) {
+                pares[j] = vetor[a]; j++;
+            } else{
+                impares[k]= vetor[a]; k++;
+            } 
+
+        }
+
+        document.write('<br/><br/>Pares: ' + pares)
+        document.write('<br/> Impares: ' + impares)
+        document.write('<br/><br/> Quantidade de numeros pares: ' + j)
+        document.write('<br/> Quantidade de números impares: ' + k)
+
+
+
+
+    </script>
+</body>
