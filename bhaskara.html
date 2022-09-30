@@ -17,14 +17,11 @@
  * delta = b² - 4ac
  * b = -b +- raíz de delta / 2a
  */
-const a = 1
-const b = -1
-const c = -12
 
  function equSGrau (a, b, c){
     const delta = b ** 2 -4 * a*c
     /**
-     * Math é um obeto do Javascript que possui metodos para fazer calculos matemáticos de maneiras mais simples */
+     * Math é um objeto do Javascript que possui metodos para fazer calculos matemáticos de maneiras mais simples */
 
     const raizDelta = Math.sqrt(delta)
     const x1 = (-b +raizDelta) / (2 *a)
